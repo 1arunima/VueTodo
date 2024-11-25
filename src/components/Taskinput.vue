@@ -16,7 +16,7 @@ const emit = defineEmits(["add-task"]);
 const addTask = () => {
   if (taskInput.value.trim() !== "") {
     emit("add-task", taskInput.value.trim());
-    taskInput.value = ""; // Clear the input field
+    taskInput.value = ""; // Clear the input field    
   }
 };
 </script>
